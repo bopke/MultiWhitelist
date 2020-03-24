@@ -32,7 +32,6 @@ public class AsyncPlayerPreLoginEventHandler implements Listener {
             rs.close();
             if (c == 0) {
                 event.disallow(AsyncPlayerPreLoginEvent.Result.KICK_OTHER, kickReason);
-                return;
             }
         } catch (SQLException e) {
             event.disallow(AsyncPlayerPreLoginEvent.Result.KICK_OTHER, errorReason);
