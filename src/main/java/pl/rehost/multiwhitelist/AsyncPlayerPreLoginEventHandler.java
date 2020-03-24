@@ -24,7 +24,7 @@ public class AsyncPlayerPreLoginEventHandler implements Listener {
     public void onAsyncPlayerPreLoginEvent(AsyncPlayerPreLoginEvent event) {
         try {
             String name = event.getName();
-            PreparedStatement ps = con.prepareStatement("SELECT count(*) FROM LinkedUsers WHERE minecraft_nickname = ?");
+            PreparedStatement ps = con.prepareStatement("SELECT count(*) FROM LinkedUsers WHERE minecraft_nickname = ? AND valid=1");
             ps.setString(1, name);
             ResultSet rs = ps.executeQuery();
             rs.next();
