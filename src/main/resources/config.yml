@@ -1,0 +1,10 @@
+# Dane dostępowe do bazy MySQL
+mysql_addr: mysql.re-host.pl
+mysql_user: user
+mysql_pass: p4$$w0rd
+mysql_name: dbname
+mysql_port: 3306
+# Powód z którym gracz zostanie rozłączony od serwera jeżeli nie jest na whiteliście
+kick_reason: sory ale nie
+# Powód z którym gracz zostanie rozłączony od serwera jeżeli wystąpi problem z połączeniem z bazą danych
+error_reason: cos poszlo nie tak, sprobuj jeszcze raz!

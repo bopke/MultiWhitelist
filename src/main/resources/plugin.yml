@@ -1,0 +1,10 @@
+api-version: '1.15'
+name: MultiWhitelist
+version: '1.0'
+author: 'Michał "Bopke" Kubik'
+main: pl.rehost.multiwhitelist.MultiWhitelist
+softdepend: []
+depend: []
+website: rehost.pl
+description: 'Simple whitelist from mysql plugin'
+load: STARTUP
